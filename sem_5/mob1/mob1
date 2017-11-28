@@ -1,0 +1,79 @@
+-->nov.20.2017
+  Portee de l'info:
+comment sont stocker les info ?
+cas general->cas par default
+name: declaration puis instanciation 
+methode: definition car valuer de la fonction est tjr la meme
+
+JAVA: h1->hello() n'existe pas (tout esr pointeur)
+
+Attributs de classe:
+declarer ds la def mais le pb est il faut le update pour tous les humains
+donc faut une autre approche
+=> donc faut des Attributs de classe acces a travers la classe ou objet
+on les appelels aussi des attibuts static
+
+/!\ on sait pas qd est ce que finalize() est appeller
+
+Methode de classe:
+[Methode hab ne peut pas etre appeller sans objet
+On devrait pas avoir d'objet pour savoir la valeur]
+defini de maniere unique dans la classe mais ne peut pas appeler un attribut com name_
+
+
+  Accsess. de l'info:
+le droit d'acces
+
+Attrb prive : acces retrient a la classe dans la quelle il est defini
+/!\ h1.name ou h1->name n'est pas possible
+
+Niveau de protec:
+Attrb public: acces ds tous les sens (read/write)
+
+Un tag public/private s'applique pour attrb/methodes jusqu'au nveau tag
+
+c++ classe privee par defaut car bonne apporche de securite
+attrb d'1 stuct public par defaut
+
+Notion d'accesseur:
+petite methodes qui nous autorise les acces et cette methode est public
+setter: autorise sous certaine cond la modif mais passer par une procedure
+
+  Amitie:
+casser le principe de privatrisation
+
+->nov.27.2017
+Relation entre classes
+
+Relation d'agreagation: englutiner l'ensmble
+
+Pb: relation d'enseblise
+    partie argre survit a son agregat
+Sol d'1 pb: forme d'inclusion 
+l'agregation composite 
+Mais on a tjr une inclusion =>c pas souhaitable
+
+Heritage ou Derivation : inclusion encore plus stricte
+
+Caracteristiques de l"heritages
+relation d'inclusion : "a un" != "est un"
+
+Un sous type se comporte com le type englobant
+
+Multipliction de classe :
+Cat->mammal->animal=>cat->animal
+Heritage multiple : une classe derive de ++ classes
+L'heritage n'exite pas avec Java car hm complique le semantiaue su lang
+arbre ou graphe sans cycle
+
+Prproiete d'un arbre ou graphe:
+Instancier une abstraite ne sert a rien=>on va donc interdire  avce
+{abstract}
+
+classe finale n'est ps derivable {leaf} en UML
+
+Accesibilite et Heritage:
+
+Probleme lie a l'heritage:
+Exposer l'implementation: donner trop d'info au client
+

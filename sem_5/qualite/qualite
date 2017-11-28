@@ -1,0 +1,70 @@
+nov.20.2017
+
+cycle de vie d'un bug
+diff rsoulutions:
+1) issue has been fixed
+fixed : the devlper fixed it
+
+2) issue will not be fixed 
+->duplicate : exits already 
+->cannot reproduce : the devlper could not reproduce it 
+  - mal expliquer cmmt le bug arrivait
+  - bug corriger par un effect de bord d'un autre bug
+->not a defect/rejected
+  -c comme ca que ca marche
+->will not fix
+  -on a d'autres priorite ou on sait qu'on arrivra pas
+Base de bug: base de donne ds laquelle on met les bugs
+
+Rapport de bug:
+glpi
+excl
+Jira
+mantis
+Devtrack
+Bugzilla
+
+strategie et org d'equipe et recherche de bug:
+Comment tester un logiciel? Comment s'organiser?
+-> le nb bug est infini
+-> a To, un instant donne, on a k bugs donc on a infini - k bugs
+
+origine des nveaux bugs:
+-> manque de communication
+-> ajout de codes depuis la derniere fois
+-> on a fait plus de tests 
+
+nov.27.2017
+Processus de tests:
+L'exemple de James Bach
+
+Exploratory testing used to be called Ad hoc and despised for being 
+less structed that other reagular approches.
+Positive testing: Do what the softw is made for. Thoriughly. It is the first and most important step of testing software
+
+But then what iis the negative test?
+Error message should be planded for and swon at the right mmt.
+
+Negative testing: trying to produce unwanted results whitin the software.
+for exemple to purchase an item whithout using a credit card.
+
+White box teting: You know in detail how the appli is supposed to work. 
+
+Black box teting: you know nothing
+
+benefits of white and black testing?
+Stress teting : overload the software with too many input, or rapid interaction
+Generally goof to spot mistakes in UI handling and/or memory leaks
+
+Soak testing: Let appli run for a long time
+Monkey test: negative/stress testing
+
+Boundary testing: overflow some variable or make them reach impossible value
+Interuption testing testing the behevior of the software when interrupted by other sodtware/OS-ralted features 
+Crucial on mobile apps
+
+Smoke teting: is not teting perse or hunt mistakes but establish a safe ground
+
+
+
+
